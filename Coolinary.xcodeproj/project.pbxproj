@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4F516C462E043FBE00C8C83D /* OnboardingFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F516C452E043FBE00C8C83D /* OnboardingFlow */; };
+		4F516C492E04608B00C8C83D /* HomeFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F516C482E04608B00C8C83D /* HomeFlow */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4FB376BD2DE3C216000F1EA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F516C462E043FBE00C8C83D /* OnboardingFlow in Frameworks */,
+				4F516C492E04608B00C8C83D /* HomeFlow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = Coolinary;
 			packageProductDependencies = (
+				4F516C452E043FBE00C8C83D /* OnboardingFlow */,
+				4F516C482E04608B00C8C83D /* HomeFlow */,
 			);
 			productName = Coolinary;
 			productReference = 4FB376AA2DE3C214000F1EA6 /* Coolinary.app */;
@@ -195,6 +204,10 @@
 			);
 			mainGroup = 4FB376A12DE3C214000F1EA6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4F516C442E043FBE00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/OnboardingFlow" */,
+				4F516C472E04608B00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/HomeFlow" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4FB376AB2DE3C214000F1EA6 /* Products */;
 			projectDirPath = "";
@@ -558,6 +571,28 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4F516C442E043FBE00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/OnboardingFlow" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CoolinaryFlows/OnboardingFlow;
+		};
+		4F516C472E04608B00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/HomeFlow" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CoolinaryFlows/HomeFlow;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F516C452E043FBE00C8C83D /* OnboardingFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OnboardingFlow;
+		};
+		4F516C482E04608B00C8C83D /* HomeFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HomeFlow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4FB376A22DE3C214000F1EA6 /* Project object */;
 }

@@ -1,10 +1,3 @@
-//
-//  CoolinaryTests.swift
-//  CoolinaryTests
-//
-//  Created by Aliaksandr Tserashkou on 25/05/2025.
-//
-
 import Testing
 @testable import Coolinary
 

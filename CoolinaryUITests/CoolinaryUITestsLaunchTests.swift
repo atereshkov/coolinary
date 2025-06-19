@@ -1,10 +1,3 @@
-//
-//  CoolinaryUITestsLaunchTests.swift
-//  CoolinaryUITests
-//
-//  Created by Aliaksandr Tserashkou on 25/05/2025.
-//
-
 import XCTest
 
 final class CoolinaryUITestsLaunchTests: XCTestCase {
