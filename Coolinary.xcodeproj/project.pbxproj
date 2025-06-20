@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4F516C462E043FBE00C8C83D /* OnboardingFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F516C452E043FBE00C8C83D /* OnboardingFlow */; };
 		4F516C492E04608B00C8C83D /* HomeFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F516C482E04608B00C8C83D /* HomeFlow */; };
+		4F516CAA2E06081100C8C83D /* HomeFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F516CA92E06081100C8C83D /* HomeFlow */; };
+		4F516CEE2E060C6D00C8C83D /* HomeFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F516CED2E060C6D00C8C83D /* HomeFlow */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F516C462E043FBE00C8C83D /* OnboardingFlow in Frameworks */,
+				4F516CEE2E060C6D00C8C83D /* HomeFlow in Frameworks */,
+				4F516CAA2E06081100C8C83D /* HomeFlow in Frameworks */,
 				4F516C492E04608B00C8C83D /* HomeFlow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +125,8 @@
 			packageProductDependencies = (
 				4F516C452E043FBE00C8C83D /* OnboardingFlow */,
 				4F516C482E04608B00C8C83D /* HomeFlow */,
+				4F516CA92E06081100C8C83D /* HomeFlow */,
+				4F516CED2E060C6D00C8C83D /* HomeFlow */,
 			);
 			productName = Coolinary;
 			productReference = 4FB376AA2DE3C214000F1EA6 /* Coolinary.app */;
@@ -206,7 +212,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				4F516C442E043FBE00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/OnboardingFlow" */,
-				4F516C472E04608B00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/HomeFlow" */,
+				4F516CEC2E060C6D00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/HomeFlow" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4FB376AB2DE3C214000F1EA6 /* Products */;
@@ -409,7 +415,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Coolinary/Preview Content\"";
-				DEVELOPMENT_TEAM = HDYLB9H4X2;
+				DEVELOPMENT_TEAM = 7K5PT2A5VQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -438,7 +444,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Coolinary/Preview Content\"";
-				DEVELOPMENT_TEAM = HDYLB9H4X2;
+				DEVELOPMENT_TEAM = 7K5PT2A5VQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -577,7 +583,7 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = CoolinaryFlows/OnboardingFlow;
 		};
-		4F516C472E04608B00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/HomeFlow" */ = {
+		4F516CEC2E060C6D00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/HomeFlow" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = CoolinaryFlows/HomeFlow;
 		};
@@ -589,6 +595,14 @@
 			productName = OnboardingFlow;
 		};
 		4F516C482E04608B00C8C83D /* HomeFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HomeFlow;
+		};
+		4F516CA92E06081100C8C83D /* HomeFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HomeFlow;
+		};
+		4F516CED2E060C6D00C8C83D /* HomeFlow */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = HomeFlow;
 		};
