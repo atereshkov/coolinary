@@ -1,7 +1,12 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+import SwiftUI
+
+public struct DesignSystemAssets {
+    public init() {}
+
+    public let onboardingBackground = Image("OnboardingBackground1", bundle: .module)
+}
 
 public struct DesignSystemConfig {
     public init() {}
-    public let test: String = "123"
+    public let test = "123"
 }
