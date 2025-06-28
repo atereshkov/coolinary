@@ -5,7 +5,7 @@ import OnboardingFlow
 
 struct AppView: View {
     var body: some View {
-        OnboardingView()
+        HomeView()
     }
 }
 
