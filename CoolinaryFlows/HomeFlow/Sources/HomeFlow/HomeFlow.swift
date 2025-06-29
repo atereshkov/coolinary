@@ -1,6 +1,8 @@
 import SwiftUI
 import DesignSystem
 
+// TODO domain package
+
 public struct HomeView: View {
     public init() { }
 
@@ -9,9 +11,10 @@ public struct HomeView: View {
             carouselView()
             tipView()
             quickActionsView()
-            yourFridgeView()
+            yourFridgeView() // Tab?
             cookSuggestionsView()
         }
+        // Home, Fridge, Recipes, I ate, Shopping List, Profile (Stats, Settings)
     }
 
     @ViewBuilder
@@ -43,15 +46,40 @@ public struct HomeView: View {
         // 1. Анализировать холодильник и советовать что нужно докупить.
         // 2. Советы по использованию продуктов (рецепты), которые уже есть в холодильнике.
         // 3.
+        HStack(spacing: 8) {
+            Image(systemName: "lightbulb")
+            Text("Tip...")
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.horizontal, 24)
     }
 
     @ViewBuilder
     func quickActionsView() -> some View {
         // Scan Food (gallery, camera, etc) - after scan suggest to add to 'I ate'
-        // Recipes (random, or suggestions based on fridge, or based on eaten food, or manual requests)
+        // Recipes (random, or suggestions based on fridge, or based on eaten food, or manual text requests using AI)
         // Shopping List (current list, ability to clear it, mark as bought, etc)
         // My Stats (daily calories small graph (circle), and button to open details)
         // 'I ate' - history of eaten food (with ability to add manually (e.g. from gallery, camera, or manually typed in))
+        HStack(spacing: 16) {
+            Button("Scan Food") {
+                // TODO
+            }
+            Button("Recipes") { // Tab?
+                // TODO
+            }
+            Button("Shopping List") { // Tab?
+                // TODO
+            }
+            Button("My Stats") { // Tab?
+                // TODO
+            }
+            Button("I ate") {
+                // TODO
+            }
+        }
+        .padding(.horizontal, 24)
+        .padding(.vertical, 8)
     }
 
     @ViewBuilder
@@ -61,7 +89,17 @@ public struct HomeView: View {
 
     @ViewBuilder
     func cookSuggestionsView() -> some View {
-        //
+        VStack {
+            HStack {
+                Image(systemName: "fork.knife")
+                Text("Cook Suggestions")
+                Spacer()
+                Text("View All")
+            }
+            // TODO
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.horizontal, 24)
     }
 }
 
