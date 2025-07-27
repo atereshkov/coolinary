@@ -1,8 +1,7 @@
 import SwiftUI
+import FoodHistoryFlow
 import DashboardFlow
 import DesignSystem
-
-// TODO domain package
 
 public struct HomeView: View {
     public init() { }
@@ -17,7 +16,7 @@ public struct HomeView: View {
                 .tabItem {
                     Label("Recipes", systemImage: "book.fill")
                 }
-            DashboardView()
+            FoodHistoryView()
                 .tabItem {
 //                    Image(systemName: "plus.circle.fill")
 //                        .font(.system(size: 24, weight: .bold))

@@ -12,6 +12,7 @@
 		4F516CAA2E06081100C8C83D /* HomeFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F516CA92E06081100C8C83D /* HomeFlow */; };
 		4F516CEE2E060C6D00C8C83D /* HomeFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F516CED2E060C6D00C8C83D /* HomeFlow */; };
 		4F61BA812E36BF35007C7984 /* DashboardFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F61BA802E36BF35007C7984 /* DashboardFlow */; };
+		4F61BAA22E36D5B8007C7984 /* FoodHistoryFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F61BAA12E36D5B8007C7984 /* FoodHistoryFlow */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 				4F61BA812E36BF35007C7984 /* DashboardFlow in Frameworks */,
 				4F516CAA2E06081100C8C83D /* HomeFlow in Frameworks */,
 				4F516C492E04608B00C8C83D /* HomeFlow in Frameworks */,
+				4F61BAA22E36D5B8007C7984 /* FoodHistoryFlow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +132,7 @@
 				4F516CA92E06081100C8C83D /* HomeFlow */,
 				4F516CED2E060C6D00C8C83D /* HomeFlow */,
 				4F61BA802E36BF35007C7984 /* DashboardFlow */,
+				4F61BAA12E36D5B8007C7984 /* FoodHistoryFlow */,
 			);
 			productName = Coolinary;
 			productReference = 4FB376AA2DE3C214000F1EA6 /* Coolinary.app */;
@@ -217,6 +220,7 @@
 				4F516C442E043FBE00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/OnboardingFlow" */,
 				4F516CEC2E060C6D00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/HomeFlow" */,
 				4F61BA7F2E36BF35007C7984 /* XCLocalSwiftPackageReference "CoolinaryFlows/DashboardFlow" */,
+				4F61BAA02E36D5B8007C7984 /* XCLocalSwiftPackageReference "CoolinaryFlows/FoodHistoryFlow" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4FB376AB2DE3C214000F1EA6 /* Products */;
@@ -595,6 +599,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = CoolinaryFlows/DashboardFlow;
 		};
+		4F61BAA02E36D5B8007C7984 /* XCLocalSwiftPackageReference "CoolinaryFlows/FoodHistoryFlow" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CoolinaryFlows/FoodHistoryFlow;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -617,6 +625,10 @@
 		4F61BA802E36BF35007C7984 /* DashboardFlow */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DashboardFlow;
+		};
+		4F61BAA12E36D5B8007C7984 /* FoodHistoryFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FoodHistoryFlow;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
