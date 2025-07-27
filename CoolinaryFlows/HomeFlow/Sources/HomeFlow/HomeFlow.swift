@@ -1,4 +1,5 @@
 import SwiftUI
+import DashboardFlow
 import DesignSystem
 
 // TODO domain package
@@ -33,13 +34,13 @@ public struct HomeView: View {
         }
     }
 
-    // Home, Recipes, I ate (+), Shopping List, Profile (Stats, Goal, Plan, Settings)
+    // Home, Recipes, I ate (+), Shopping List, Me
 
     // Home - Dashboard
     // Recipes (random, or suggestions based on fridge, or based on eaten food, or manual text requests using AI)
     // 'I ate' - history list + add food (e.g. from camera, gallery or manually typed in info)
     // Shopping List (current list, ability to clear it, mark as bought, etc)
-    // My Stats (calendar - daily calories small graph (circle), and button to open details)
+    // Profile (Stats, Goal, Plan, Settings)
 }
 
 #Preview {

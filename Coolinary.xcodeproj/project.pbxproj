@@ -11,6 +11,7 @@
 		4F516C492E04608B00C8C83D /* HomeFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F516C482E04608B00C8C83D /* HomeFlow */; };
 		4F516CAA2E06081100C8C83D /* HomeFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F516CA92E06081100C8C83D /* HomeFlow */; };
 		4F516CEE2E060C6D00C8C83D /* HomeFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F516CED2E060C6D00C8C83D /* HomeFlow */; };
+		4F61BA812E36BF35007C7984 /* DashboardFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F61BA802E36BF35007C7984 /* DashboardFlow */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 			files = (
 				4F516C462E043FBE00C8C83D /* OnboardingFlow in Frameworks */,
 				4F516CEE2E060C6D00C8C83D /* HomeFlow in Frameworks */,
+				4F61BA812E36BF35007C7984 /* DashboardFlow in Frameworks */,
 				4F516CAA2E06081100C8C83D /* HomeFlow in Frameworks */,
 				4F516C492E04608B00C8C83D /* HomeFlow in Frameworks */,
 			);
@@ -127,6 +129,7 @@
 				4F516C482E04608B00C8C83D /* HomeFlow */,
 				4F516CA92E06081100C8C83D /* HomeFlow */,
 				4F516CED2E060C6D00C8C83D /* HomeFlow */,
+				4F61BA802E36BF35007C7984 /* DashboardFlow */,
 			);
 			productName = Coolinary;
 			productReference = 4FB376AA2DE3C214000F1EA6 /* Coolinary.app */;
@@ -213,6 +216,7 @@
 			packageReferences = (
 				4F516C442E043FBE00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/OnboardingFlow" */,
 				4F516CEC2E060C6D00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/HomeFlow" */,
+				4F61BA7F2E36BF35007C7984 /* XCLocalSwiftPackageReference "CoolinaryFlows/DashboardFlow" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4FB376AB2DE3C214000F1EA6 /* Products */;
@@ -587,6 +591,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = CoolinaryFlows/HomeFlow;
 		};
+		4F61BA7F2E36BF35007C7984 /* XCLocalSwiftPackageReference "CoolinaryFlows/DashboardFlow" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CoolinaryFlows/DashboardFlow;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -605,6 +613,10 @@
 		4F516CED2E060C6D00C8C83D /* HomeFlow */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = HomeFlow;
+		};
+		4F61BA802E36BF35007C7984 /* DashboardFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DashboardFlow;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
