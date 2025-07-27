@@ -15,21 +15,21 @@ public struct HomeView: View {
                 }
             DashboardView()
                 .tabItem {
-                    Label("Recipes", systemImage: "house")
+                    Label("Recipes", systemImage: "book.fill")
                 }
             DashboardView()
                 .tabItem {
 //                    Image(systemName: "plus.circle.fill")
 //                        .font(.system(size: 24, weight: .bold))
-                    Label("I ate", systemImage: "plus.circle.fill")
+                    Label("I ate", systemImage: "fork.knife.circle.fill")
                 }
             DashboardView()
                 .tabItem {
-                    Label("Shopping", systemImage: "house")
+                    Label("Shopping", systemImage: "cart.fill")
                 }
             DashboardView()
                 .tabItem {
-                    Label("Me", systemImage: "house")
+                    Label("Me", systemImage: "person.crop.circle.fill")
                 }
         }
     }
