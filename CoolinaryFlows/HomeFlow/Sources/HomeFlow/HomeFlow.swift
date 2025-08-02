@@ -1,6 +1,9 @@
 import SwiftUI
-import FoodHistoryFlow
 import DashboardFlow
+import RecipesFlow
+import FoodHistoryFlow
+import ShoppingListFlow
+import ProfileFlow
 import DesignSystem
 
 public struct HomeView: View {
@@ -12,7 +15,7 @@ public struct HomeView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            DashboardView()
+            RecipesView()
                 .tabItem {
                     Label("Recipes", systemImage: "book.fill")
                 }
@@ -22,11 +25,11 @@ public struct HomeView: View {
 //                        .font(.system(size: 24, weight: .bold))
                     Label("I ate", systemImage: "fork.knife.circle.fill")
                 }
-            DashboardView()
+            ShoppingListView()
                 .tabItem {
                     Label("Shopping", systemImage: "cart.fill")
                 }
-            DashboardView()
+            ProfileView()
                 .tabItem {
                     Label("Me", systemImage: "person.crop.circle.fill")
                 }
@@ -36,9 +39,9 @@ public struct HomeView: View {
     // Home, Recipes, I ate (+), Shopping List, Me
 
     // Home - Dashboard
-    // Recipes (random, or suggestions based on fridge, or based on eaten food, or manual text requests using AI)
-    // 'I ate' - history list + add food (e.g. from camera, gallery or manually typed in info)
-    // Shopping List (current list, ability to clear it, mark as bought, etc)
+    // Recipes (random, or suggestions based on fridge, or based on eaten food, or manual text requests using AI), search
+    // 'I ate' - history list by dates + add food (e.g. from camera, gallery or manually typed in info)
+    // Shopping List (current list, search, ability to clear it, mark as bought, etc)
     // Profile (Stats, Goal, Plan, Settings)
 }
 

@@ -56,6 +56,7 @@ public struct DashboardView: View {
                 Image(systemName: "flame")
                 Text("Calories 0 / 2000")
                 Spacer()
+                Text("+") // Button to quickly add food (I ate flow)
             }
         }
         .padding(.horizontal, 24)

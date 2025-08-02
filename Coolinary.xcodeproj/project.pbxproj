@@ -13,6 +13,9 @@
 		4F516CEE2E060C6D00C8C83D /* HomeFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F516CED2E060C6D00C8C83D /* HomeFlow */; };
 		4F61BA812E36BF35007C7984 /* DashboardFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F61BA802E36BF35007C7984 /* DashboardFlow */; };
 		4F61BAA22E36D5B8007C7984 /* FoodHistoryFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4F61BAA12E36D5B8007C7984 /* FoodHistoryFlow */; };
+		4FBF63222E3EBDFC004389B8 /* ProfileFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4FBF63212E3EBDFC004389B8 /* ProfileFlow */; };
+		4FBF63252E3EBEED004389B8 /* RecipesFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4FBF63242E3EBEED004389B8 /* RecipesFlow */; };
+		4FBF63282E3EBF22004389B8 /* ShoppingListFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4FBF63272E3EBF22004389B8 /* ShoppingListFlow */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +67,12 @@
 				4F516C462E043FBE00C8C83D /* OnboardingFlow in Frameworks */,
 				4F516CEE2E060C6D00C8C83D /* HomeFlow in Frameworks */,
 				4F61BA812E36BF35007C7984 /* DashboardFlow in Frameworks */,
+				4FBF63282E3EBF22004389B8 /* ShoppingListFlow in Frameworks */,
 				4F516CAA2E06081100C8C83D /* HomeFlow in Frameworks */,
 				4F516C492E04608B00C8C83D /* HomeFlow in Frameworks */,
 				4F61BAA22E36D5B8007C7984 /* FoodHistoryFlow in Frameworks */,
+				4FBF63252E3EBEED004389B8 /* RecipesFlow in Frameworks */,
+				4FBF63222E3EBDFC004389B8 /* ProfileFlow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +139,9 @@
 				4F516CED2E060C6D00C8C83D /* HomeFlow */,
 				4F61BA802E36BF35007C7984 /* DashboardFlow */,
 				4F61BAA12E36D5B8007C7984 /* FoodHistoryFlow */,
+				4FBF63212E3EBDFC004389B8 /* ProfileFlow */,
+				4FBF63242E3EBEED004389B8 /* RecipesFlow */,
+				4FBF63272E3EBF22004389B8 /* ShoppingListFlow */,
 			);
 			productName = Coolinary;
 			productReference = 4FB376AA2DE3C214000F1EA6 /* Coolinary.app */;
@@ -221,6 +230,9 @@
 				4F516CEC2E060C6D00C8C83D /* XCLocalSwiftPackageReference "CoolinaryFlows/HomeFlow" */,
 				4F61BA7F2E36BF35007C7984 /* XCLocalSwiftPackageReference "CoolinaryFlows/DashboardFlow" */,
 				4F61BAA02E36D5B8007C7984 /* XCLocalSwiftPackageReference "CoolinaryFlows/FoodHistoryFlow" */,
+				4FBF63202E3EBDFC004389B8 /* XCLocalSwiftPackageReference "CoolinaryFlows/ProfileFlow" */,
+				4FBF63232E3EBEED004389B8 /* XCLocalSwiftPackageReference "CoolinaryFlows/RecipesFlow" */,
+				4FBF63262E3EBF22004389B8 /* XCLocalSwiftPackageReference "CoolinaryFlows/ShoppingListFlow" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4FB376AB2DE3C214000F1EA6 /* Products */;
@@ -603,6 +615,18 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = CoolinaryFlows/FoodHistoryFlow;
 		};
+		4FBF63202E3EBDFC004389B8 /* XCLocalSwiftPackageReference "CoolinaryFlows/ProfileFlow" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CoolinaryFlows/ProfileFlow;
+		};
+		4FBF63232E3EBEED004389B8 /* XCLocalSwiftPackageReference "CoolinaryFlows/RecipesFlow" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CoolinaryFlows/RecipesFlow;
+		};
+		4FBF63262E3EBF22004389B8 /* XCLocalSwiftPackageReference "CoolinaryFlows/ShoppingListFlow" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CoolinaryFlows/ShoppingListFlow;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -629,6 +653,18 @@
 		4F61BAA12E36D5B8007C7984 /* FoodHistoryFlow */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FoodHistoryFlow;
+		};
+		4FBF63212E3EBDFC004389B8 /* ProfileFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProfileFlow;
+		};
+		4FBF63242E3EBEED004389B8 /* RecipesFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RecipesFlow;
+		};
+		4FBF63272E3EBF22004389B8 /* ShoppingListFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ShoppingListFlow;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
