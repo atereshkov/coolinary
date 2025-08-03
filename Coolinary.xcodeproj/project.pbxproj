@@ -16,6 +16,7 @@
 		4FBF63222E3EBDFC004389B8 /* ProfileFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4FBF63212E3EBDFC004389B8 /* ProfileFlow */; };
 		4FBF63252E3EBEED004389B8 /* RecipesFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4FBF63242E3EBEED004389B8 /* RecipesFlow */; };
 		4FBF63282E3EBF22004389B8 /* ShoppingListFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 4FBF63272E3EBF22004389B8 /* ShoppingListFlow */; };
+		4FBF63492E3ECD00004389B8 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 4FBF63482E3ECD00004389B8 /* Domain */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FBF63492E3ECD00004389B8 /* Domain in Frameworks */,
 				4F516C462E043FBE00C8C83D /* OnboardingFlow in Frameworks */,
 				4F516CEE2E060C6D00C8C83D /* HomeFlow in Frameworks */,
 				4F61BA812E36BF35007C7984 /* DashboardFlow in Frameworks */,
@@ -142,6 +144,7 @@
 				4FBF63212E3EBDFC004389B8 /* ProfileFlow */,
 				4FBF63242E3EBEED004389B8 /* RecipesFlow */,
 				4FBF63272E3EBF22004389B8 /* ShoppingListFlow */,
+				4FBF63482E3ECD00004389B8 /* Domain */,
 			);
 			productName = Coolinary;
 			productReference = 4FB376AA2DE3C214000F1EA6 /* Coolinary.app */;
@@ -233,6 +236,7 @@
 				4FBF63202E3EBDFC004389B8 /* XCLocalSwiftPackageReference "CoolinaryFlows/ProfileFlow" */,
 				4FBF63232E3EBEED004389B8 /* XCLocalSwiftPackageReference "CoolinaryFlows/RecipesFlow" */,
 				4FBF63262E3EBF22004389B8 /* XCLocalSwiftPackageReference "CoolinaryFlows/ShoppingListFlow" */,
+				4FBF63472E3ECD00004389B8 /* XCLocalSwiftPackageReference "CoolinaryPackages/Domain" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4FB376AB2DE3C214000F1EA6 /* Products */;
@@ -627,6 +631,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = CoolinaryFlows/ShoppingListFlow;
 		};
+		4FBF63472E3ECD00004389B8 /* XCLocalSwiftPackageReference "CoolinaryPackages/Domain" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CoolinaryPackages/Domain;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -665,6 +673,10 @@
 		4FBF63272E3EBF22004389B8 /* ShoppingListFlow */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ShoppingListFlow;
+		};
+		4FBF63482E3ECD00004389B8 /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

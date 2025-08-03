@@ -80,6 +80,7 @@ public struct DashboardView: View {
     @ViewBuilder
     func cookSuggestionsView() -> some View {
         // Should be based on the previously eatean food, shopping list, or just some random suggestions (based on the plan, goal).
+        // TODO move to the Recipes flow?
         VStack {
             HStack {
                 Image(systemName: "fork.knife")
