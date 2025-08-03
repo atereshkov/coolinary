@@ -15,8 +15,10 @@ struct CoolinaryApp: App {
 
 // Presentation (Feature Flows: Views and View Models). Uses UI Models? Converts UI Models from Entities?
 
-// Domain (Use Cases, Entities). Returns Entities?
+// Domain (Use Cases, Entities). Returns Entities
 
 // Data (Repositories -> Network or Storage). Returns Entities (converts from DTO/DBO)?
-// API/Network (API, Services, etc). Returns DTO
-// Storage (Core Data, User Defaults, etc). Returns DBO
+// - API/Network (API, Services, etc). Returns DTO
+// - Storage (Core Data, User Defaults, etc). Returns DBO
+
+// Presentation —> Domain <— Data

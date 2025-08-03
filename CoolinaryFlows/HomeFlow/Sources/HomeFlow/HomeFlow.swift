@@ -1,35 +1,50 @@
 import SwiftUI
-import DashboardFlow
-import RecipesFlow
-import FoodHistoryFlow
-import ShoppingListFlow
-import ProfileFlow
+
 import DesignSystem
 
 public struct HomeView: View {
-    public init() { }
+
+    let dashboardView: () -> AnyView
+    let recipesView: () -> AnyView
+    let foodHistoryView: () -> AnyView
+    let shoppingListView: () -> AnyView
+    let profileView: () -> AnyView
+
+    public init(
+        foodHistoryView: @escaping () -> AnyView,
+        dashboardView: @escaping () -> AnyView,
+        recipesView: @escaping () -> AnyView,
+        shoppingListView: @escaping () -> AnyView,
+        profileView: @escaping () -> AnyView
+    ) {
+        self.foodHistoryView = foodHistoryView
+        self.dashboardView = dashboardView
+        self.recipesView = recipesView
+        self.shoppingListView = shoppingListView
+        self.profileView = profileView
+    }
 
     public var body: some View {
         TabView {
-            DashboardView()
+            dashboardView()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            RecipesView()
+            recipesView()
                 .tabItem {
                     Label("Recipes", systemImage: "book.fill")
                 }
-            FoodHistoryView()
+            foodHistoryView()
                 .tabItem {
 //                    Image(systemName: "plus.circle.fill")
 //                        .font(.system(size: 24, weight: .bold))
                     Label("I ate", systemImage: "fork.knife.circle.fill")
                 }
-            ShoppingListView()
+            shoppingListView()
                 .tabItem {
                     Label("Shopping", systemImage: "cart.fill")
                 }
-            ProfileView()
+            profileView()
                 .tabItem {
                     Label("Me", systemImage: "person.crop.circle.fill")
                 }
@@ -46,5 +61,5 @@ public struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    // HomeView(foodHistoryView: , dashboardView: <#() -> AnyView#>, recipesView: <#() -> AnyView#>, shoppingListView: <#() -> AnyView#>, profileView: <#() -> AnyView#>)
 }

@@ -26,7 +26,8 @@ let package = Package(
                 "DesignSystem",
                 "DashboardFlow",
                 "FoodHistoryFlow"
-            ]),
+            ]
+        ),
         .testTarget(
             name: "HomeFlowTests",
             dependencies: ["HomeFlow"]

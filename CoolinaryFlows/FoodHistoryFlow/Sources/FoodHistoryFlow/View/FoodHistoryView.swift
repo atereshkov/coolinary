@@ -2,37 +2,34 @@ import SwiftUI
 
 struct FoodHistoryItem: Identifiable {
     let id = UUID()
-    let name: String
+    var name: String
 }
 
 public struct FoodHistoryView: View {
 
-    var items: [FoodHistoryItem] = [
-        FoodHistoryItem(name: "Burger"),
-        FoodHistoryItem(name: "Pizza"),
-        FoodHistoryItem(name: "Aperol Spritz"),
-        FoodHistoryItem(name: "Pierogi")
-    ]
+    @ObservedObject var viewModel: FoodHistoryViewModel
 
-    public init() { }
+    public init(viewModel: FoodHistoryViewModel) {
+        self.viewModel = viewModel
+    }
 
     public var body: some View {
         NavigationStack {
             List {
-                Section(header: Text("Today (2156 cal)")) {
-                    ForEach(items) { item in
+                Section(header: Text("Today (2150 cal)")) {
+                    ForEach(viewModel.items) { item in
                         Text(item.name)
                     }
                 }
 
                 Section(header: Text("Yesterday (1670 cal)")) {
-                    ForEach(items) { item in
+                    ForEach(viewModel.items) { item in
                         Text(item.name)
                     }
                 }
 
                 Section(header: Text("20/07/2025 (2560 cal)")) {
-                    ForEach(items) { item in
+                    ForEach(viewModel.items) { item in
                         Text(item.name)
                     }
                 }
@@ -49,16 +46,8 @@ public struct FoodHistoryView: View {
                 }
             }
         }
-    }
-
-    @ViewBuilder
-    func testView() -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                Text("Test")
-            }
+        .task {
+            await viewModel.loadFoodHistory()
         }
-        .padding(.horizontal, 24)
-        .padding(.bottom, 12)
     }
 }
