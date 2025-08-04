@@ -36,8 +36,6 @@ public struct HomeView: View {
                 }
             foodHistoryView()
                 .tabItem {
-//                    Image(systemName: "plus.circle.fill")
-//                        .font(.system(size: 24, weight: .bold))
                     Label("I ate", systemImage: "fork.knife.circle.fill")
                 }
             shoppingListView()
