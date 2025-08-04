@@ -1,10 +1,10 @@
 import Foundation
 
-public protocol FoodHistoryUseCaseType {
+public protocol FoodHistoryUseCaseType: Sendable {
     func fetchFoodHistory() async throws -> [FoodHistoryEntity]
 }
 
-public class FoodHistoryUseCase: FoodHistoryUseCaseType {
+public final class FoodHistoryUseCase: FoodHistoryUseCaseType {
 
     private let repository: FoodHistoryRepositoryType
 

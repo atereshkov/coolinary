@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol FoodHistoryRepositoryType {
+public protocol FoodHistoryRepositoryType: Sendable {
     func fetchFoodHistory() async throws -> [FoodHistoryEntity]
 
     func addFoodHistory(_ foodHistory: FoodHistoryEntity) async throws

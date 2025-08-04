@@ -1,6 +1,7 @@
 import SwiftUI
 import Domain
 
+@MainActor
 final public class FoodHistoryViewModel: ObservableObject {
     @Published var items: [FoodHistoryItem] = []
 
@@ -10,11 +11,11 @@ final public class FoodHistoryViewModel: ObservableObject {
         self.useCase = useCase
     }
 
-    @MainActor public func loadFoodHistory() async {
+    public func loadFoodHistory() async {
         do {
-            items = try await useCase.fetchFoodHistory().map { food in
-                FoodHistoryItem(name: food.name ?? "")
-            }
+            items = try await useCase
+                .fetchFoodHistory()
+                .map { FoodHistoryItem(name: $0.name ?? "") }
         } catch {
             // Handle error
         }
