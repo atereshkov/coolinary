@@ -1,9 +1,13 @@
 import SwiftUI
+import ProfileFlow
+import FoodHistoryFlow
+import ShoppingListFlow
+import RecipesFlow
+import DashboardFlow
 
 import HomeFlow
 import OnboardingFlow
 
-import FoodHistoryFlow
 import Domain
 import Data
 
@@ -11,9 +15,9 @@ struct AppView: View {
 
     var body: some View {
         HomeView(
-            foodHistoryView: { makeFoodHistoryView() },
             dashboardView: { makeDashboardView() },
             recipesView: { makeRecipesView() },
+            foodHistoryView: { makeFoodHistoryView() },
             shoppingListView: { makeShoppingListView() },
             profileView: { makeProfileView() }
         )
@@ -27,19 +31,19 @@ struct AppView: View {
     }
 
     private func makeDashboardView() -> AnyView {
-        return AnyView(EmptyView())
+        return AnyView(DashboardView())
     }
 
     private func makeRecipesView() -> AnyView {
-        return AnyView(EmptyView())
+        return AnyView(RecipesView())
     }
 
     private func makeShoppingListView() -> AnyView {
-        return AnyView(EmptyView())
+        return AnyView(ShoppingListView())
     }
 
     private func makeProfileView() -> AnyView {
-        return AnyView(EmptyView())
+        return AnyView(ProfileView())
     }
 }
 

@@ -11,9 +11,9 @@ public struct HomeView: View {
     let profileView: () -> AnyView
 
     public init(
-        foodHistoryView: @escaping () -> AnyView,
         dashboardView: @escaping () -> AnyView,
         recipesView: @escaping () -> AnyView,
+        foodHistoryView: @escaping () -> AnyView,
         shoppingListView: @escaping () -> AnyView,
         profileView: @escaping () -> AnyView
     ) {
